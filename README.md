@@ -83,4 +83,4 @@ Because the HX711 operates at 24-bit resolution, it is extremely susceptible to 
 
 ---
 
-*Designed and engineered by Qusai Altair.*
+*Designed and engineered by Mohamad Altair.*
