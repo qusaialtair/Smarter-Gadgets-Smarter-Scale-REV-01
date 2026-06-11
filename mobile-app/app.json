@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "MagSafeScaleFresh",
+    "slug": "MagSafeScaleFresh",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.MagSafeScaleFresh",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "MagSafe Scale uses Bluetooth to connect to your scale and read weight.",
+        "NSBluetoothPeripheralUsageDescription": "MagSafe Scale uses Bluetooth to connect to your scale and read weight."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": false,
+          "modes": ["peripheral", "central"],
+          "bluetoothAlwaysPermission": "Allow MagSafe Scale to connect to your Bluetooth scale."
+        }
+      ]
+    ]
+  }
+}
